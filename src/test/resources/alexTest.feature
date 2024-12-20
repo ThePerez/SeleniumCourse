@@ -1,5 +1,7 @@
-Feature: La barra de navagación superior me permite navegar a todas las subsecciones
+Feature: Navigation Bar
+    To see the subpages
+    Without logging in
+    I can click the navigation bar
 
-Para ver las páginas dentro de la web de Pruebas
-Sin haber logueado
-Puedo hacer click en los links
+Scenario: I can access the subpages through the navigation bar
+    Given I navigate to www.demoqa.com
