@@ -12,7 +12,7 @@ Feature: Navigation Bar
     #         | Slider    |
     #         | Toottip   |
 
-    Scenario: Enter to 'List Of CheatSheets'
+    Scenario: Enter to 'How to debug with Android Studio'
         Given I navigate to www.globalsqa.com
-        When I go to Tabs using the navigation bar
-        And Select Sortable option
+        When I go to CheatSheets using the navigation bar
+        And Select SQL Cheat Sheet

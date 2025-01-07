@@ -1,15 +1,15 @@
 package steps;
 
 import io.cucumber.java.en.*;
+import pages.PaginaListOfCheatSheets;
 import pages.PaginaTabs;
 import pages.PaginaPrincipal;
-import pages.PaginaSortable;
 
 public class AlexSteps {
 
     PaginaPrincipal landingPage = new PaginaPrincipal();
-    PaginaTabs tabsPage = new PaginaTabs();
-    PaginaSortable sortablePage = new PaginaSortable();
+    PaginaTabs listasPage = new PaginaTabs();
+    PaginaListOfCheatSheets listCheats = new PaginaListOfCheatSheets();
 
     @Given("I navigate to www.globalsqa.com")
     public void navigateToGlobalSQA() {
@@ -17,14 +17,13 @@ public class AlexSteps {
     }
 
     @When("I go to Tabs using the navigation bar")
-    public void navigateToTabs() {
-        tabsPage.clickTabs();
+    public void clickTabs() {
+        landingPage.clickElement("Tabs");
     }
 
-    @And("Select Sortable option")
-    public void navigateToSortable() {
-        sortablePage.clickSortable();
-    }
+    // @And("Select SQL Cheat Sheet")
+    // public void navigateToSQL() {
+    // listasPage.clickCheatSheets();
+    // listCheats.clickSQL();
+    // }
 }
-
-// a[normalize-space()='Tabs']

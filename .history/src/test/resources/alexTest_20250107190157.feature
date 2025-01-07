@@ -15,4 +15,4 @@ Feature: Navigation Bar
     Scenario: Enter to 'List Of CheatSheets'
         Given I navigate to www.globalsqa.com
         When I go to Tabs using the navigation bar
-        And Select Sortable option
+        # And Select SQL Cheat Sheet
