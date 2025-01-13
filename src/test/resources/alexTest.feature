@@ -12,7 +12,11 @@ Feature: Navigation Bar
     #         | Slider    |
     #         | Toottip   |
 
-    Scenario: Enter to 'List Of CheatSheets'
+    # Scenario: Enter to 'List Of CheatSheets'
+    #     Given I navigate to www.globalsqa.com
+    #     When I go to Tabs using the navigation bar
+    #     And Select Sortable option
+
+    Scenario Users can select Simple List option 
         Given I navigate to www.globalsqa.com
-        When I go to Tabs using the navigation bar
-        And Select Sortable option
+        When I select DropDown Button
