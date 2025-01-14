@@ -16,10 +16,10 @@ public class AlexSteps {
         landingPage.navigateToGlobalSQA();
     }
 
-    // @When("I go to Tabs using the navigation bar")
-    // public void navigateToTabs() {
-    // tabsPage.clickTabs();
-    // }
+    @When("I go to Tabs using the navigation bar")
+    public void navigateToTabs() {
+        tabsPage.clickTabs();
+    }
 
     @When("I select DropDown Button")
     public void selectDropdownButton() {
