@@ -21,3 +21,5 @@ Feature: Navigation Bar
         Given I navigate to www.globalsqa.com
         When I select DropDown Button
         Then I can validate the option in the country page
+
+    
