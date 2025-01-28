@@ -4,7 +4,6 @@ import java.util.Arrays;
 import java.util.List;
 
 import org.testng.Assert;
-import org.testng.asserts.SoftAssert;
 
 import io.cucumber.java.en.*;
 import pages.PaginaTabs;
@@ -13,8 +12,6 @@ import pages.PaginaPrincipal;
 import pages.PaginaSortable;
 
 public class AlexSteps {
-
-    SoftAssert soft = new SoftAssert();
 
     PaginaPrincipal landingPage = new PaginaPrincipal();
     PaginaTabs tabsPage = new PaginaTabs();
@@ -104,7 +101,7 @@ public class AlexSteps {
         String valorEncontrado = "Dublin";
 
         // Validar que 2 valores no son iguales
-        Assert.assertNotEquals(valorEsperado, valorEncontrado);
+        Assert.assertEquals(valorEsperado, valorEncontrado);
 
         // Validar que 2 valores sean iguales
         Assert.assertEquals(valorEsperado, valorEncontrado);
@@ -114,14 +111,6 @@ public class AlexSteps {
 
         // Verifica que una condición sea falsa.
         Assert.assertFalse(valorEncontrado.contains(valorEsperado));
-
-        // Soft Assertions. No detiene la ejecución ante una falla
-
-        soft.assertEquals(valorEsperado, valorEncontrado);
-        soft.assertTrue(valorEncontrado.contains(valorEsperado));
-        soft.assertNotEquals(valorEsperado, valorEncontrado);
-
-        soft.assertAll();
 
     }
 
