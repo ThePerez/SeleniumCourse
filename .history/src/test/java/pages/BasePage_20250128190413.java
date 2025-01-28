@@ -1,6 +1,7 @@
 package pages;
 
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -26,7 +27,7 @@ public class BasePage {
      * el 'driver' estático
      * WebDriverWait se usa para poner esperas explícitas en los elementos web
      */
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 
     /*
      * Configura el WebDriver para Chrome usando WebDriverManager.
@@ -73,15 +74,16 @@ public class BasePage {
         Find(locator).sendKeys(keysToSend);
     }
 
-    public void selectFromDropDownByValue(String locator, String value) {
+    public void selectFromDropdownByValue(String locator, String value) {
         Select dropdown = new Select(Find(locator));
+
         dropdown.selectByValue(value);
     }
 
-    public void selectFromDropDownByIndex(String locator, Integer index) {
+    public void selectFromDropdownByIndex(String locator, Integer index) {
         Select dropdown = new Select(Find(locator));
-        dropdown.selectByIndex(index);
 
+        dropdown.selectByIndex(index);
     }
 
     public int dropdownSize(String locator) {
@@ -91,4 +93,16 @@ public class BasePage {
 
         return dropdownOptions.size();
     }
+
+    public List<String> getDropdownValues(String locator) {
+        Select dropdown = new Select(Find(locator));
+
+        List<WebElement> dropdownOptions = dropdown.getOptions();
+        List<String> values = new ArrayList<>();
+        for (WebElement option : dropdownOptions) {
+            values.add(option.getText());
+        }
+        return values;
+    }
+
 }

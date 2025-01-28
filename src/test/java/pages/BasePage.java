@@ -102,7 +102,6 @@ public class BasePage {
         for (WebElement option : dropdownOptions) {
             values.add(option.getText());
         }
-
         return values;
     }
 
