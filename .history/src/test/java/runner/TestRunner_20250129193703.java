@@ -9,7 +9,8 @@ import pages.BasePage;
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources", // Directorio de archivos .feature
                 glue = "steps", // Paquete donde están clases definiendo los steps
-                plugin = { "pretty", "html:target/cucumber-reports" })
+                plugin = { "pretty", "html:target/cucumber-reports" }, tags = "@Simple")
+
 public class TestRunner {
         @AfterClass
         public static void cleanDriver() {
