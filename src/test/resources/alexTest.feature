@@ -20,9 +20,4 @@ Feature: Navigation Bar
     Scenario: Users can select Simple List option 
         Given I navigate to www.globalsqa.com
         When I select DropDown Button
-        Then I can validate the option in the country page
-
-
-@
-
-    
+        Then I can validate the option in the country page    

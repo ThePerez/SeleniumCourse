@@ -36,6 +36,9 @@ dependencies {
 
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.0'
+
+
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
@@ -47,4 +50,6 @@ java {
 
 tasks.named('test') {
     systemProperty "cucumber.options", System.getProperty("cucumber.options")
+    systemProperties System.getProperties();
+ 
 }

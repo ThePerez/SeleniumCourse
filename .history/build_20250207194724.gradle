@@ -50,4 +50,13 @@ java {
 
 tasks.named('test') {
     systemProperty "cucumber.options", System.getProperty("cucumber.options")
+    systemProperties System.getProperties();
+
+tasks.register("cucumberTest", Test) {
+    useJUnitPlatform()
+    systemProperty "cucumber.filter.tags", System.getProperty("cucumber.filter.tags")
+    include "**/*Test.class"
+}
+
+ 
 }
