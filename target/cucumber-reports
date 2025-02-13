@@ -40,7 +40,7 @@ body{padding:0;margin:0}.html-formatter{max-width:1600px;min-height:100vh;margin
 <div id="content">
 </div>
 <script>
-window.CUCUMBER_MESSAGES = [{"meta":{"protocolVersion":"24.1.0","implementation":{"name":"cucumber-jvm","version":"7.20.1"},"runtime":{"name":"Java HotSpot(TM) 64-Bit Server VM","version":"21.0.5+9-LTS-239"},"os":{"name":"Windows 11"},"cpu":{"name":"amd64"}}},{"testRunStarted":{"timestamp":{"seconds":1738968046,"nanos":786216200}}},{"testRunFinished":{"success":true,"timestamp":{"seconds":1738968046,"nanos":830780800}}}];
+window.CUCUMBER_MESSAGES = [{"meta":{"protocolVersion":"24.1.0","implementation":{"name":"cucumber-jvm","version":"7.20.1"},"runtime":{"name":"Java HotSpot(TM) 64-Bit Server VM","version":"21.0.5+9-LTS-239"},"os":{"name":"Windows 11"},"cpu":{"name":"amd64"}}},{"testRunStarted":{"timestamp":{"seconds":1739482745,"nanos":775002000}}},{"testRunFinished":{"success":true,"timestamp":{"seconds":1739482745,"nanos":859940400}}}];
 </script>
 <script>
 /*! For license information please see main.js.LICENSE.txt */
