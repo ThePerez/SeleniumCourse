@@ -1,3 +1,4 @@
+@Simple
 Feature: Navigation Bar
     To see the subpages
     Without logging in
@@ -16,7 +17,7 @@ Feature: Navigation Bar
          When I go to Tabs using the navigation bar
        
 
-    @Simple
+
     Scenario: Users can select Simple List option 
         Given I navigate to www.globalsqa.com
         When I select DropDown Button
