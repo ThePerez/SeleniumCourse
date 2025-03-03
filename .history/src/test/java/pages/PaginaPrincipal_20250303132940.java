@@ -18,7 +18,7 @@ public class PaginaPrincipal extends BasePage {
         navigateTo("https://www.globalsqa.com/demo-site/");
     }
 
-    public void clickOnSectionNavigationBar(String section) {
+    public void clickOnSectionNavigationBar(String sectionLink) {
         try {
             // Asegúrate de que el especificador de formato es correcto
             String formattedString = String.format("Navegando a la sección: %s", sectionLink);

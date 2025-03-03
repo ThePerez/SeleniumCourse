@@ -9,13 +9,12 @@ Feature: Navigation Bar
 
 
     Scenario Outline: I can access the subpages through the navigation bar
-        When I go to <sectionLink> using the navigation bar
+        When I go to <section> using the navigation bar
 
         Examples:
-            | sectionLink   |
-            | Tabs          | 
-            | Slider        | 
-            | ToolTip       |
+            | section   |
+            | Tabs      |  
+            | ToolTip    |       
     @List
     Scenario: Enter to 'List Of CheatSheets'
          When I go to Tabs using the navigation bar

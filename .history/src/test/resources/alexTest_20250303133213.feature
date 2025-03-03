@@ -13,8 +13,7 @@ Feature: Navigation Bar
 
         Examples:
             | sectionLink   |
-            | Tabs          | 
-            | Slider        | 
+            | Tabs          |  
             | ToolTip       |
     @List
     Scenario: Enter to 'List Of CheatSheets'

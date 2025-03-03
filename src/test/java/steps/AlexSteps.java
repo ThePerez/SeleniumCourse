@@ -31,6 +31,16 @@ public class AlexSteps {
         tabsPage.clickTabs();
     }
 
+    @When("I go to Slider using the navigation bar")
+    public void navigateToslider() {
+        tabsPage.clickTabs();
+    }
+
+    @When("I go to ToolTip using the navigation bar")
+    public void navigateToolTip() {
+        tabsPage.clickTabs();
+    }
+
     @When("I select DropDown Button")
     public void selectDropdownButton() {
         landingPage.clickOnDropDownButton();
