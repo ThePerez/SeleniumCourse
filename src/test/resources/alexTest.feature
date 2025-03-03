@@ -22,6 +22,6 @@ Feature: Navigation Bar
          And Select Sortable option
 
     @Simple
-    Scenario: Users can selects Simple List option 
+    Scenario: Users can selects Simple List option
         When The User selects DropDown Button
         Then I can validate the option in the country page  

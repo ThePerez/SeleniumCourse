@@ -55,7 +55,7 @@ public class AlexSteps {
     public void validateCountry() {
         List<String> lista = country.returnCountryValues();
         List<String> listaEsperada = Arrays.asList(
-                "Afghanistan", "Åland Islands", "Albania", "Almeria", "American Samoa", "Andorra",
+                "Afghanistan", "Åland Islands", "Albania", "Algeria", "American Samoa", "Andorra",
                 "Angola", "Anguilla", "Antarctica", "Antigua and Barbuda", "Argentina", "Armenia",
                 "Aruba", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh",
                 "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bermuda", "Bhutan",
