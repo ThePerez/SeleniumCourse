@@ -21,27 +21,27 @@ public class AlexSteps {
     PaginaSortable sortablePage = new PaginaSortable();
     PaginaCountry country = new PaginaCountry();
 
-    @Given("I navigate to www.globalsqa.com")
+    @Given("(I|The User) navigate to www.globalsqa.com")
     public void navigateToGlobalSQA() {
         landingPage.navigateToGlobalSQA();
     }
 
-    @When("I go to Tabs using the navigation bar")
+    @When("(I|The User) go to Tabs using the navigation bar")
     public void navigateToTabs() {
         tabsPage.clickTabs();
     }
 
-    @When("I go to Slider using the navigation bar")
+    @When("(I|The User) go to Slider using the navigation bar")
     public void navigateToslider() {
         tabsPage.clickTabs();
     }
 
-    @When("I go to ToolTip using the navigation bar")
+    @When("(I|The User) go to ToolTip using the navigation bar")
     public void navigateToolTip() {
         tabsPage.clickTabs();
     }
 
-    @When("^(?:I|The User|The Client) selects? DropDown Button$")
+    @When("(I|The User) (select|selects) DropDown Button")
     public void selectDropdownButton() {
         landingPage.clickOnDropDownButton();
     }
@@ -51,7 +51,7 @@ public class AlexSteps {
         sortablePage.clickSortable();
     }
 
-    @Then("^(?:I|The User|The Client) can validate the option in the country page$")
+    @Then("(I|The User) can validate the option in the country page")
     public void validateCountry() {
         List<String> lista = country.returnCountryValues();
         List<String> listaEsperada = Arrays.asList(

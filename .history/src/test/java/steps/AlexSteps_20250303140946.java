@@ -41,7 +41,7 @@ public class AlexSteps {
         tabsPage.clickTabs();
     }
 
-    @When("^(?:I|The User|The Client) selects? DropDown Button$")
+    @When("I select DropDown Button")
     public void selectDropdownButton() {
         landingPage.clickOnDropDownButton();
     }
@@ -51,7 +51,7 @@ public class AlexSteps {
         sortablePage.clickSortable();
     }
 
-    @Then("^(?:I|The User|The Client) can validate the option in the country page$")
+    @Then("(I|The User) can validate the option in the country page")
     public void validateCountry() {
         List<String> lista = country.returnCountryValues();
         List<String> listaEsperada = Arrays.asList(

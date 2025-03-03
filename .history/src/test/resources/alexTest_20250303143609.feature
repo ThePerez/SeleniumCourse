@@ -23,5 +23,5 @@ Feature: Navigation Bar
 
     @Simple
     Scenario: Users can selects Simple List option 
-        When The User selects DropDown Button
-        Then I can validate the option in the country page  
+        When The Client select DropDown Button
+        Then (I|The User|The Client) can validate the option in the country page can validate the option in the country page    

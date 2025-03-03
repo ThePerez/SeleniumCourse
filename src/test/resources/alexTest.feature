@@ -8,7 +8,7 @@ Feature: Navigation Bar
         Given I navigate to www.globalsqa.com
 
 
-    Scenario Outline: I can access the subpages through the navigation bar
+    Scenario Outline: The User can access the subpages through the navigation bar
         When I go to <sectionLink> using the navigation bar
 
         Examples:
@@ -22,6 +22,6 @@ Feature: Navigation Bar
          And Select Sortable option
 
     @Simple
-    Scenario: Users can select Simple List option 
-        When I select DropDown Button
-        Then I can validate the option in the country page    
+    Scenario: Users can selects Simple List option 
+        When The User selects DropDown Button
+        Then I can validate the option in the country page  
