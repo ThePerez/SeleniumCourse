@@ -9,5 +9,5 @@ Feature: Navigation Bar
           
     @List
     Scenario: Enter to 'List Of CheatSheets'
-          When I go to Tabs using the navigation bar
+         When I go to Tabs using the navigation bar
 

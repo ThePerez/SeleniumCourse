@@ -3,11 +3,11 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-public class PaginaPrincipal extends BasePage {
+public class Principal extends BasePage {
 
     private String dropDownButton = "//a[normalize-space()='DropDown']";
 
-    public PaginaPrincipal() {
+    public Principal() {
         super(driver);
     }
 

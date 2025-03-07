@@ -5,9 +5,6 @@ Feature: Navigation Bar
     I can click the navigation bar links
 
     Background: I am on the Globalsqa Web 
-        Given I navigate to www.globalsqa.com
-          
-    @List
-    Scenario: Enter to 'List Of CheatSheets'
-          When I go to Tabs using the navigation bar
+        Given I navigate to www.amazon.com
+
 

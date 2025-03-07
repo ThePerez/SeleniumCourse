@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 
 public class PaginaPrincipal extends BasePage {
 
+    private String sectionLink = "//a[normalize-space()='%' and @href]";
     private String dropDownButton = "//a[normalize-space()='DropDown']";
 
     public PaginaPrincipal() {
@@ -14,7 +15,7 @@ public class PaginaPrincipal extends BasePage {
     // Método para navegar a la página
 
     public void navigateToGlobalSQA() {
-        navigateTo("https://www.amazon.com");
+        navigateTo("https://www.globalsqa.com/demo-site/");
     }
 
     public void clickOnSectionNavigationBar(String sectionLink) {

@@ -20,6 +20,6 @@ public class AlexSteps {
 
     @When("I go to Tabs using the navigation bar")
     public void navigateToTabs() {
-        tabsPage.clickReturn();
+        tabsPage.clickTabs();
     }
 }
