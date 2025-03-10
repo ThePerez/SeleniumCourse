@@ -12,5 +12,4 @@ Feature: Test Amazon search functionality
      Examples:
          | Product | 
          | Alexa   |
-    
         

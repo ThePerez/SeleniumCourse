@@ -22,7 +22,9 @@ public class BasePage {
 
     protected static WebDriver driver;
     private static Actions action;
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+    WebElement addToCartButton = wait
+            .until(ExpectedConditions.elementToBeClickable(By.xpath("//input[contains(@id, 'add-to-cart-button')]")));
 
     static {
         ChromeOptions chromeOptions = new ChromeOptions();

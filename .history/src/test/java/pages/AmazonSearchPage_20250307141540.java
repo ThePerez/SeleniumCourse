@@ -13,7 +13,7 @@ public class PaginaPrincipal extends BasePage {
 
     // Método para navegar a la página
 
-    public void navigateToGlobalSQA() {
+    public void navigateToAmazon() {
         navigateTo("https://www.amazon.com");
     }
 

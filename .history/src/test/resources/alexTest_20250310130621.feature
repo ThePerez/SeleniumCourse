@@ -11,6 +11,5 @@ Feature: Test Amazon search functionality
 
      Examples:
          | Product | 
-         | Alexa   |
-    
-        
+         | Alexa    |
+         #| Adidas  |

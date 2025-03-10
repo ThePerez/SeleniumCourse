@@ -33,8 +33,6 @@ public class AlexSteps {
     @Then("^the user is able to add it to the cart$")
     public void itemCanBeAddedToTheCart() {
         amazon.addToCart();
-        Assert.assertEquals("Added to cart", amazon.addedToCartMessage());
+        Assert.assertEquals("Agregado al carrito", amazon.addedToCartMessage());
     }
 }
-
-// input[@id='add-to-cart-button']

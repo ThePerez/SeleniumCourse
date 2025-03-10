@@ -36,5 +36,3 @@ public class AlexSteps {
         Assert.assertEquals("Added to cart", amazon.addedToCartMessage());
     }
 }
-
-// input[@id='add-to-cart-button']

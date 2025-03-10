@@ -1,13 +1,16 @@
-@Navigation
-Feature: Navigation Bar
-    To see the subpages
-    Without logging in
-    I can click the navigation bar links
+@Amazon
+Feature: Test Amazon search functionality
 
-    Background: I am on the Globalsqa Web 
-        Given I navigate to www.globalsqa.com
-          
-    @List
-    Scenario: Enter to 'List Of CheatSheets'
-          When I go to Tabs using the navigation bar
+    @Cart
+    Scenario Outline: As a customer when I search for Alexa, I want to see if the third option on the second page is available for purchase and can be added to the cart
+    Given the user navigates to www.amazon.com
+    And searches for <Product>
+    And navigates to the page number 2
+    And selects the third item
+    Then the user is able to add it to the cart
 
+     Examples:
+         | Product | 
+         | Alexa   |
+    
+        

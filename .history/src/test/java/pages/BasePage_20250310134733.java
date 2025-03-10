@@ -22,7 +22,9 @@ public class BasePage {
 
     protected static WebDriver driver;
     private static Actions action;
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+    WebElement thirdProduct = wait.until(ExpectedConditions
+            .elementToBeClickable(By.xpath("(//div[contains(@data-component-type, 's-search-result')])[3]//img")));
 
     static {
         ChromeOptions chromeOptions = new ChromeOptions();

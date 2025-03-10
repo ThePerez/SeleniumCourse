@@ -22,8 +22,9 @@ public class BasePage {
 
     protected static WebDriver driver;
     private static Actions action;
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
-
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+    WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
+            "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[66]/div[1]/div[1]/span[1]/ul[1]/li[3]/span[1]/a[1]")));
     static {
         ChromeOptions chromeOptions = new ChromeOptions();
         driver = new ChromeDriver(chromeOptions);

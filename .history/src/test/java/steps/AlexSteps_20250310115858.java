@@ -4,6 +4,7 @@ import org.testng.Assert;
 
 import io.cucumber.java.en.*;
 import pages.AmazonSearchPage;
+import pages.PaginaSearch;
 
 public class AlexSteps {
 
@@ -11,7 +12,7 @@ public class AlexSteps {
 
     @Given("^the user navigates to www.amazon.com")
     public void navigateToAmazon() {
-        amazon.navigateToAmazon();
+        landingPage.navigateToAmazon();
     }
 
     @And("^searches for (.+)$")
@@ -33,8 +34,6 @@ public class AlexSteps {
     @Then("^the user is able to add it to the cart$")
     public void itemCanBeAddedToTheCart() {
         amazon.addToCart();
-        Assert.assertEquals("Added to cart", amazon.addedToCartMessage());
+        Assert.assertEquals("Agregado al carrito", amazon.addedToCartMessage());
     }
 }
-
-// input[@id='add-to-cart-button']
